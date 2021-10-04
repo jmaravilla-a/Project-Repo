@@ -16,19 +16,24 @@ h3 {
     text-align:center;
 }
 
+.dog-stats {
+    float: right;
+}
 
 img {
+    float: left;
 
     display: block;
     
-    
-    width: 25%;
-    
+    width: auto;
     
     margin-left: auto;
     
-    
     margin-right: auto;
     
+    box-shadow: 5px 5px 100px rgb(255, 255, 255);
+
+    border: 8px groove #ffd700
+
 }
 
