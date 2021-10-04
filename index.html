@@ -1,16 +1,16 @@
 <html>
 <head>
-    <h1> Dog Trainer 9000</h1>
+    <h1> Dog Trainer 3000</h1>
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h2 id='dog-name'> Insert Dog Name Here</h2>
-    <div id='dog-breed'>
-        <h3>Some Breed of Dog</h3>
+    <h2> Do you have what it takes?</h2>
+    <div>
+        <h3>Your dog is Insert name of dog)</h3>
     </div>
 
     <div id = "dog-picture-container"> 
-        <img id='dog-image' src="https://www.thesprucepets.com/thmb/mERLXPcXz4U9G702HlsORXJqZrU=/4231x2380/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg" style="height: 200;" >
+        <img id='dog-image' src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2016/07/whos_that_pokemon.png?fit=1920%2C1080&ssl=1" style="height: 200;" >
 
     </div>
 
@@ -29,20 +29,21 @@
         <button id='attackBttn'> Add Attack </button>
         <button id='defenseBttn'> Add Defense </button>
         <button id='speedBttn'> Add Speed </button>
-        <button id='specialBttn'> Use Special Attack </button>
+        <!-- <button id='specialBttn'> Use Special Attack </button> -->
+        <!-- commented out special attack until we do something with it -->
         <br>
     </div>
 
     <div id='comments'>
         <br>
         <form id = 'comments-form'>
-            <label> Add comment : </label>
-            <input type='text' id='commentInput' name="commentInput"
+            <label> Training Log: </label>
+            <input type='text' id='commentInput' name="commentInput">
+            <button> Submit </button> 
         </form>
-        <button> Submit </button>
+        
         <div id="comments-container">
-            <ul>Test Comment #1</ul>
-            <ul>Test Comment #2</ul>
+            
         </div>
     </div>
 <script defer type="text/javascript" src="index.js"></script>
