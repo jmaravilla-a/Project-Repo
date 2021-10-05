@@ -56,17 +56,15 @@ img {
 }
 
 #special-move-bar-container {
-    width: 100%;
-    background-color: grey;
-    border: 8px groove #ffd700
-    
+    text-align: center;
   }
   
   #special-move-bar {
     width: 10%;
     height: 30px;
     background-color: green;
-    
+    left: 280px;
+    position: relative;
     border: 8px groove #ffd700
     
   }
@@ -74,3 +72,7 @@ img {
   #specialBttn {
     display:none;
   }
+
+  /* #charge-special-bttn {
+      text-align: center;
+  } */
