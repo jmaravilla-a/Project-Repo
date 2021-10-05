@@ -73,12 +73,12 @@ img {
   }
 
   #specialBttn {
-    display:none;
+    visibility: hidden;
   }
 
   #levels-container {
-      /* display:none */
+       /* display:none  */
   }
-  /* #charge-special-bttn {
+  #charge-special-bttn {
       text-align: center;
-  } */
+  }

@@ -69,31 +69,31 @@ function addName(e) {
     e.preventDefault()
     const nameContainer = document.querySelector('h3')
     nameContainer.textContent = `Your dog's name is ${e.target.nameInput.value}`
-    nameForm.style.display = 'none'
+    nameForm.style.visibility = 'hidden'
 }
 
 //reveal special meter only when stats of dog > stats of monster
-// levelsContainer = document.getElementById('levels-container')
-// function revealSpecialMeter () {
-//     //grab dog stats and monster stats
-//     let dogAttack = document.getElementById('attack-points').textContent
-//     let dogDefense = document.getElementById('defense-points').textContent
-//     let dogSpeed = document.getElementById('speed-points').textContent
-//     let monsterAttack = document.getElementById('monster-attack-points').textContent
-//     let monsterDefense = document.getElementById('monster-defense-points').textContent
-//     let monsterSpeed = document.getElementById('monster-speed-points').textContent
+levelsContainer = document.getElementById('levels-container')
+function revealSpecialMeter () {
+    //grab dog stats and monster stats
+    let dogAttack = document.getElementById('attack-points').textContent
+    let dogDefense = document.getElementById('defense-points').textContent
+    let dogSpeed = document.getElementById('speed-points').textContent
+    let monsterAttack = document.getElementById('monster-attack-points').textContent
+    let monsterDefense = document.getElementById('monster-defense-points').textContent
+    let monsterSpeed = document.getElementById('monster-speed-points').textContent
     
-//     //compare stats with if statement
-//     if (dogAttack > monsterAttack && dogDefense > monsterDefense && dogSpeed > monsterSpeed) {
-//         levelsContainer.style.display = "inline-block"
-//     } else {
-//         levelsContainer.style.display = "none"
-//     }
-//     console.log(dogAttack, dogDefense, monsterAttack, monsterDefense)
+    //compare stats with if statement
+    if (dogAttack > monsterAttack && dogDefense > monsterDefense && dogSpeed > monsterSpeed) {
+        levelsContainer.style.display = "inline-block"
+    } else {
+        levelsContainer.style.display = "none"
+    }
+    console.log(dogAttack, dogDefense, monsterAttack, monsterDefense)
 
 
-// }
-// speedBttn.addEventListener("click", revealSpecialMeter)
+}
+speedBttn.addEventListener("click", revealSpecialMeter)
 
 //increases level of special attack bar over time
 let specialAttackCharge = 20;
@@ -125,7 +125,7 @@ function isSpecialCharged() {
     let specialCharge = document.getElementById('special-move-bar')
     let fullyCharged = specialCharge.style.width 
     if (fullyCharged == "60%") {
-        useSpecialBttn.style.display = "inline-block"
+        useSpecialBttn.style.visibility = "visible"
     }
 
 }
