@@ -72,3 +72,47 @@ function addName(e) {
 }
 
 //this is a funny comment!!!!!!!
+
+//increases level of special attack bar over time
+let specialAttackCharge = 20;
+function increaseSpecialAttack() {
+    if (specialAttackCharge == 20) {
+      specialAttackCharge = 1;
+      let specialElement = document.getElementById("special-move-bar");
+      let width = 20;
+      let id = setInterval(frame, 20);
+      function frame() {
+        if (width >= 60) {
+          clearInterval(id);
+          specialAttackCharge = 0;
+        } else {
+          width++;
+          specialElement.style.width = width + "%";
+          isSpecialCharged()
+        }
+      }
+    }
+}
+
+//button that charges special attck
+const chargeSpecialBttn = document.getElementById('charge-special-bttn')
+chargeSpecialBttn.addEventListener('click', increaseSpecialAttack)
+
+
+function isSpecialCharged() {
+    let specialCharge = document.getElementById('special-move-bar')
+    let fullyCharged = specialCharge.style.width 
+    if (fullyCharged == "60%") {
+        useSpecialBttn.style.display = "inline-block"
+    }
+
+}
+
+//button that uses special attack
+const useSpecialBttn = document.getElementById('specialBttn')
+useSpecialBttn.addEventListener('click', useSpecialAttack)
+//function that uses special attack
+function useSpecialAttack () {
+
+
+}
