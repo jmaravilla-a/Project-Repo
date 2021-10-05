@@ -1,4 +1,6 @@
-body {background-color: black;}
+body {
+    background-color: #cccccc;
+   }
 
  * {
      color: brown;
@@ -21,16 +23,11 @@ h3 {
     font-size: 25px
 }
 
-.dog-stats {
-    float: right;
-    display: inline-block
-}
-
 img {
 
-    float: left;
+    /* float: left; */
 
-    display: inline-block;
+    display: block;
     
     width: auto;
     
@@ -38,7 +35,7 @@ img {
     
     margin-right: auto;
     
-    box-shadow: 5px 5px 100px rgb(255, 255, 255);
+    /* box-shadow: 5px 5px 30px rgb(255, 255, 255); */
 
     border: 8px groove #ffd700
 
@@ -48,4 +45,14 @@ img {
     text-align: center;
 }
 
-.dog-stats
+#dog-stats {
+    text-align: center;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#comments {
+    text-align: center;
+}
