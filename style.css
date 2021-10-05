@@ -25,8 +25,6 @@ h3 {
 
 img {
 
-    /* float: left; */
-
     display: block;
     
     width: auto;
@@ -35,7 +33,7 @@ img {
     
     margin-right: auto;
     
-    /* box-shadow: 5px 5px 30px rgb(255, 255, 255); */
+    box-shadow: 5px 5px 150px rgb(255, 255, 255);
 
     border: 8px groove #ffd700
 
@@ -56,7 +54,6 @@ img {
 #comments {
     text-align: center;
 }
-.dog-stats
 
 #special-move-bar-container {
     width: 100%;
