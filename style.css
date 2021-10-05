@@ -77,3 +77,7 @@ img {
   #specialBttn {
     display:none;
   }
+
+  #levels-container {
+      /* display:none */
+  }
