@@ -84,16 +84,18 @@ function revealSpecialMeter () {
     let monsterSpeed = document.getElementById('monster-speed-points').textContent
     
     //compare stats with if statement
-    if (dogAttack > monsterAttack && dogDefense > monsterDefense && dogSpeed > monsterSpeed) {
-        levelsContainer.style.display = "inline-block"
+    if (parseInt(dogAttack) > parseInt(monsterAttack) && parseInt(dogDefense) > parseInt(monsterDefense) && parseInt(dogSpeed) > parseInt(monsterSpeed)) {
+        levelsContainer.style.visibility = "visible"
     } else {
-        levelsContainer.style.display = "none"
+        levelsContainer.style.visibility = "hidden"
     }
-    console.log(dogAttack, dogDefense, monsterAttack, monsterDefense)
+    console.log("hello")
 
 
 }
 speedBttn.addEventListener("click", revealSpecialMeter)
+defenseBttn.addEventListener("click", revealSpecialMeter)
+attackBttn.addEventListener("click", revealSpecialMeter)
 
 //increases level of special attack bar over time
 let specialAttackCharge = 20;
@@ -102,7 +104,7 @@ function increaseSpecialAttack() {
       specialAttackCharge = 1;
       let specialElement = document.getElementById("special-move-bar");
       let width = 20;
-      let id = setInterval(frame, 20);
+      let id = setInterval(frame, 200);
       function frame() {
         if (width >= 60) {
           clearInterval(id);
@@ -138,4 +140,18 @@ function useSpecialAttack () {
     const monsterImage = document.getElementById('monster-image')
     //the special attack kills the monster
     monsterImage.src = "https://media.istockphoto.com/vectors/cartoon-dead-monster-vector-illustration-vector-id1192788254"
+    alert(`The monster was obliterated by your dog's special attack. You Win!`)
 }
+
+//randomly generate monster numbers 1-10
+
+
+const monsterAttack = document.getElementById('monster-attack-points')
+const monsterDefense = document.getElementById('monster-defense-points')
+const monsterSpeed = document.getElementById('monster-speed-points')
+document.addEventListener('DOMContentLoaded', (e) => {
+    monsterAttack.textContent = Math.floor(Math.random() * 10 +1)
+    monsterDefense.textContent = Math.floor(Math.random() * 10 +1)
+    monsterSpeed.textContent = Math.floor(Math.random() * 10 +1)
+    console.log(Math.floor(Math.random() * 10 +1))
+})

@@ -77,7 +77,7 @@ img {
   }
 
   #levels-container {
-       /* display:none  */
+       visibility: hidden 
   }
   #charge-special-bttn {
       text-align: center;
