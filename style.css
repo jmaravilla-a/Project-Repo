@@ -56,3 +56,24 @@ img {
 #comments {
     text-align: center;
 }
+.dog-stats
+
+#special-move-bar-container {
+    width: 100%;
+    background-color: grey;
+    border: 8px groove #ffd700
+    
+  }
+  
+  #special-move-bar {
+    width: 10%;
+    height: 30px;
+    background-color: green;
+    
+    border: 8px groove #ffd700
+    
+  }
+
+  #specialBttn {
+    display:none;
+  }
