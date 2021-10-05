@@ -58,6 +58,17 @@ function addComment(e) {
     //appends it to comments-container
     const commentContainer = document.getElementById('comments-container')
     commentContainer.appendChild(newComment)
+    trainingLog.reset()
+}
+
+const nameForm = document.getElementById('dog-name-form')
+nameForm.addEventListener('submit', addName)
+
+function addName(e) {
+    e.preventDefault()
+    const nameContainer = document.querySelector('h3')
+    nameContainer.textContent = `Your dog's name is ${e.target.nameInput.value}`
+    nameForm.style.display = 'none'
 }
 
 //this is a funny comment!!!!!!!
