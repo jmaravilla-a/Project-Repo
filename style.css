@@ -69,7 +69,7 @@ img {
     background-color: green;
     left: 280px;
     position: relative;
-    border: 8px groove #ffd700
+    border: 4px groove #ffd700
     
   }
 
@@ -83,3 +83,19 @@ img {
   #charge-special-bttn {
       text-align: center;
   }
+
+  /* Everything after this line is in regards to the temporary bar if you want to mess around with it.  */
+  #myProgress {
+    width: 100%;
+    background-color: grey;
+    opacity: 40%;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+    opacity: 100%;
+  }
+
+  /* else, delete it  */
