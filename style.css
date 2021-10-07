@@ -1,9 +1,13 @@
-body {
-    background-color: #cccccc;
-   }
+html {
+    background: url("./streetfighter.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
  * {
-     color: brown;
+     color: rgb(7, 5, 1);
      font-size: 15px;
      font-weight: bold
  }
