@@ -12,7 +12,6 @@ fetch(baseUrl)
 //renders image of dog pulled from the fetch request
 function renderImage(data) { 
     //function takes image from data
-    // console.log(dogImage)
     //replaces our dog image with data.image
     let dogImage = document.getElementById('dog-image')
     dogImage.src = data.message
