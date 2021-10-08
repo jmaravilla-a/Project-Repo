@@ -8,12 +8,12 @@ fetch(baseUrl)
     .then(data => renderImage(data)
     )
     
-
+let dogImage = document.getElementById('dog-image') //global so it can change after stats are increased
 //renders image of dog pulled from the fetch request
 function renderImage(data) { 
     //function takes image from data
     //replaces our dog image with data.image
-    let dogImage = document.getElementById('dog-image')
+    
     dogImage.src = data.message
 }
 
@@ -127,6 +127,7 @@ function isSpecialCharged() {
     let fullyCharged = specialCharge.style.width 
     if (fullyCharged == "60%") {
         useSpecialBttn.style.visibility = "visible"
+        dogImage.src = "https://ih1.redbubble.net/image.1128082229.8014/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
     }
 
 }
