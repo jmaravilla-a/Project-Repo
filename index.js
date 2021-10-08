@@ -2,7 +2,7 @@
 
 
 //pulls a random image of a dog from the dog ceo API
-let baseUrl = 'https://dog.ceo/api/breeds/image/random'
+let baseUrl = 'https://dog.ceo/api/breed/shiba/images/random'
 fetch(baseUrl) 
     .then(resp => resp.json())
     .then(data => renderImage(data)
