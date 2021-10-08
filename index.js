@@ -154,29 +154,3 @@ document.addEventListener('DOMContentLoaded', (e) => {
     monsterSpeed.textContent = Math.floor(Math.random() * 10 +1)
     console.log(Math.floor(Math.random() * 10 +1))
 })
-
-// ---------------- A new kind of progress bar if you want to mess around with this and incorporate it.
-// ---------------- There's also a bit of CSS and JS added to this. I think the only thing left is to add
-// ---------------- a button and event listener to get it started. I felt Like this is a smoother version 
-// ---------------- of our progress bar. I also changed the opacity of the regular bar and need to figure 
-// ---------------- how to change the opacity to 100 for the actual progress bar. If you don't like it at
-// ---------------- all, then you can just delete it all. 
-
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-}

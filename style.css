@@ -9,12 +9,13 @@ html {
  * {
      color: rgb(243, 111, 247);
      font-size: 15px;
-     font-weight: bold
+     font-weight: bold;
  }
 
  h1 {
     text-align:center;
-    font-size: 45px;
+    font-size: 60px;
+    text-shadow: 16px 22px 11px rgba(233, 163, 235, 0.9);
 }
 
 h2 {
@@ -39,7 +40,7 @@ img {
     
     box-shadow: 5px 5px 150px rgb(255, 255, 255);
 
-    border: 8px groove #ffd700
+    border: 4px groove #ffd700
 
 }
 
@@ -61,13 +62,14 @@ img {
 
 #special-move-bar-container {
     text-align: center;
+    opacity: 75%;
   }
   
   #special-move-bar {
     width: 10%;
     height: 30px;
     background-color: green;
-    left: 280px;
+    left: 345px;
     position: relative;
     border: 4px groove #ffd700
     
@@ -84,18 +86,6 @@ img {
       text-align: center;
   }
 
-  /* Everything after this line is in regards to the temporary bar if you want to mess around with it.  */
-  #myProgress {
-    width: 100%;
-    background-color: grey;
-    opacity: 40%;
+  #monster-stats {
+    text-align: center;
   }
-  
-  #myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
-    opacity: 100%;
-  }
-
-  /* else, delete it  */
