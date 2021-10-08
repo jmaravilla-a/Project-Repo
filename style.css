@@ -10,11 +10,17 @@ html {
      color: rgb(243, 111, 247);
      font-size: 15px;
      font-weight: bold;
+     font-family: 'Press Start 2P', cursive;
+ }
+
+ .title {
+    background-color: rgba(31, 15, 31, 0.8);
+    padding: 1em 0;
  }
 
  h1 {
     text-align:center;
-    font-size: 60px;
+    font-size: 3.12rem;
     text-shadow: 16px 22px 11px rgba(233, 163, 235, 0.9);
 }
 
@@ -28,9 +34,17 @@ h3 {
     font-size: 25px
 }
 
+#all-pics-and-stats {
+    display: flex;
+    background-color: rgba(31, 15, 31, 0.8);
+    justify-content: center;
+}
+
 img {
 
     display: block;
+    /* display:block;
+ float:left; */
     
     width: auto;
     
@@ -40,24 +54,37 @@ img {
     
     box-shadow: 5px 5px 150px rgb(255, 255, 255);
 
-    border: 4px groove #ffd700
+    border: 4px groove #ffd700;
+
+    /* padding-left: 3em; */
 
 }
 
 #dog-name-form {
     text-align: center;
+    margin-top: 1em;
 }
 
 #dog-stats {
     text-align: center;
+    /* display:block;
+ float:left; */
+    margin-left: 3em;
 }
 
 #buttons {
-    text-align: center;
+    /* text-align: center; */
+    /* display:block;
+ float:left; */
+    margin-left: 2em;
+    margin-top: 1em;
+    
 }
 
 #comments {
     text-align: center;
+    /* display:block;
+ float:left; */
 }
 
 #special-move-bar-container {
@@ -69,7 +96,7 @@ img {
     width: 10%;
     height: 30px;
     background-color: green;
-    left: 345px;
+    left: 145px;
     position: relative;
     border: 4px groove #ffd700
     
@@ -88,4 +115,52 @@ img {
 
   #monster-stats {
     text-align: center;
+    /* display:block;
+    float:left; */
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #monster-container {
+    display: flex;
+    margin-left: 15em;
+  }
+
+  #opponent-name {
+      margin-left: 15em;
+      /* padding-top: 15em; */
+  }
+
+  #names {
+      display: flex;
+  }
+
+  #comments {
+      background-color: rgba(31, 15, 31, 0.8);
+      width: 70%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin: 3em auto;
+      /* margin-top: 3em;
+      margin-bottom: 3em; */
+      
+  }
+
+  .statbtn {
+      font-size: 0.8rem;
+      height: 2rem;
+      background-color:rgba(31, 15, 31, 0.8) ;
+      transition: .3s;
+
+  }
+
+  .statbtn:hover {
+      color:rgba(31, 15, 31, 0.8);
+      background-color: rgb(243, 111, 247);
+  }
+
+  #charge-special-button {
+    background-color:rgba(31, 15, 31, 0.8) ;
+    transition: .3s;
   }

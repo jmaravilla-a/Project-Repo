@@ -102,8 +102,8 @@ function increaseSpecialAttack() {
     if (specialAttackCharge == 20) {
       specialAttackCharge = 1;
       let specialElement = document.getElementById("special-move-bar");
-      let width = 20;
-      let id = setInterval(frame, 200);
+      let width = 1;
+      let id = setInterval(frame, 80);
       function frame() {
         if (width >= 60) {
           clearInterval(id);

@@ -1,52 +1,81 @@
 <html>
 <head>
-    <h1> Dog Trainer 3000</h1>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="title">
+    <h1> 🔥 Dog Trainer 3000 🔥 </h1>
     <h2> Do you have what it takes?</h2>
+    </div>
     <div>
         <form id = "dog-name-form">
             <label> Dog Name: </label>
             <input type='text' id='nameInput' name="nameInput">
             <button> Name your fighter </button> 
         </form>
-        <h3>Your dog is Insert name of dog</h3>
+        
     </div>
+    <div id = "names">
+    <h3>Your dog is Insert name of dog</h3>
+    <h3 id="opponent-name"> Your Opponent</h3>
+    </div>
+    
 
-    <div id='levels-container'>
-        <div id='special-move-bar-container'>
-            <div id='special-move-bar'> Special Attack </div>
-            <button id="charge-special-bttn"> Charge Special</button>
+    
+    <div id='all-pics-and-stats'>
+        
+        <div id = "dog-picture-container"> 
+            <img id='dog-image' src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2016/07/whos_that_pokemon.png?fit=1920%2C1080&ssl=1" style="height: 200;">
+        </div>
+        
+        <div id = "dog-stats">
+            <p>Dog Stats:</p>
+            <ul>Attack:</ul>
+            <ul id = "attack-points">0</ul>
+            <ul>Defense:</ul>
+            <ul id = "defense-points">0</ul>
+            <ul>Speed:</ul>
+            <ul id = "speed-points">0</ul>
+        </div>
+        <div id="monster-container">
+            <div id= monster-image-container>
+                <img id='monster-image' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-8-6-monster-movies-1596743034.png?crop=0.454xw:0.907xh;0.0160xw,0&resize=640:*" style="height: 200;" >
+            </div>
+            <div id = "monster-stats">
+                <p>Monster Stats:</p>
+                <ul>Attack:</ul>
+                <ul id = "monster-attack-points">5</ul>
+                <ul>Defense:</ul>
+                <ul id = "monster-defense-points">8</ul>
+                <ul>Speed:</ul>
+                <ul id = "monster-speed-points">2</ul>
+            </div>
         </div>
     </div>
-<br>
-
-    <div id = "dog-picture-container"> 
-        <img id='dog-image' src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2016/07/whos_that_pokemon.png?fit=1920%2C1080&ssl=1" style="height: 200;">
-    </div>
-
-    <div id = "dog-stats">
-        <p>Dog Stats:</p>
-        <li>Attack:</li>
-        <ul id = "attack-points">0</ul>
-        <li>Defense:</li>
-        <ul id = "defense-points">0</ul>
-        <li>Speed:</li>
-        <ul id = "speed-points">0</ul>
-    </div>
-
+    
     <div id='buttons'>
-        <button id='attackBttn'> Dog Biscuit </button>
-        <button id='defenseBttn'> Defense Training </button>
-        <button id='speedBttn'> Go out for a run </button>
-        <button id='specialBttn'> Use Special Attack </button> 
+        <button id='attackBttn' class="statbtn"> Dog Biscuit </button>
+        <button id='defenseBttn' class="statbtn"> Defense Training </button>
+        <button id='speedBttn' class="statbtn"> Go out for a run </button>
+        <button id='specialBttn' class="statbtn"> Use Special Attack </button> 
         
         <br>
     </div>
-
+    <br>
+    <div id='levels-container'>
+        <div id='special-move-bar-container'>
+            <div id='special-move-bar'> Special Attack </div>
+            <br>
+            <button id="charge-special-bttn"> Charge Special</button>
+        </div>
+    </div>
+    <br>
+    
     <div id='comments'>
-        <br>
+        <br><br><br><br>
         <form id = 'comments-form'>
             <label> Training Log: </label>
             <input type='text' id='commentInput' name="commentInput">
@@ -57,20 +86,8 @@
             <!-- This is a comment -->
         </div>
     </div>
-
-    <div id="monster-container">
-        <h3> Your Opponent</h3>
-        <img id='monster-image' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mh-8-6-monster-movies-1596743034.png?crop=0.454xw:0.907xh;0.0160xw,0&resize=640:*" style="height: 200;" >
-        <div id = "monster-stats">
-            <p>Monster Stats:</p>
-            <li>Attack:</li>
-            <ul id = "monster-attack-points">5</ul>
-            <li>Defense:</li>
-            <ul id = "monster-defense-points">8</ul>
-            <li>Speed:</li>
-            <ul id = "monster-speed-points">2</ul>
-        </div>
-    </div>
+    
+    <!-- </span> -->
     <audio controls loop volume='0.5' >
         <source src="./StreetFighterSong.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
