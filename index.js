@@ -139,7 +139,8 @@ function useSpecialAttack () {
     const monsterImage = document.getElementById('monster-image')
     //the special attack kills the monster
     monsterImage.src = "https://media.istockphoto.com/vectors/cartoon-dead-monster-vector-illustration-vector-id1192788254"
-    alert(`The monster was obliterated by your dog's special attack. You Win!`)
+    //alert(`The monster was obliterated by your dog's special attack. You Win!`)
+    winScreen.style.display = "inline"
 }
 
 //randomly generate monster numbers 1-10
