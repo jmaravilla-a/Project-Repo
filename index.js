@@ -158,4 +158,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
 })
 
 let volume = document.getElementById('volume')
-volume.volume = .15
+volume.volume = .10
