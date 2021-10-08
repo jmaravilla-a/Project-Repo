@@ -164,3 +164,7 @@ img {
     background-color:rgba(31, 15, 31, 0.8) ;
     transition: .3s;
   }
+
+#winScreen {
+    display: none
+}
